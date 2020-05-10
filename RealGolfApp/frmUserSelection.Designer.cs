@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class UserSelectionForm
+    partial class frmUserSelection
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSelectionForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserSelection));
             this.picSaintsLogo = new System.Windows.Forms.PictureBox();
             this.lblWelcomeMessage = new System.Windows.Forms.Label();
             this.lblSelection = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             // 
             this.picSaintsLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picSaintsLogo.Image = ((System.Drawing.Image)(resources.GetObject("picSaintsLogo.Image")));
-            this.picSaintsLogo.Location = new System.Drawing.Point(203, 96);
+            this.picSaintsLogo.Location = new System.Drawing.Point(103, 91);
             this.picSaintsLogo.Name = "picSaintsLogo";
             this.picSaintsLogo.Size = new System.Drawing.Size(395, 341);
             this.picSaintsLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -50,17 +50,17 @@
             // lblWelcomeMessage
             // 
             this.lblWelcomeMessage.AutoSize = true;
-            this.lblWelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(103, 33);
+            this.lblWelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(17, 33);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(595, 39);
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(567, 37);
             this.lblWelcomeMessage.TabIndex = 8;
             this.lblWelcomeMessage.Text = "Welcome, (Coach) [User\'s First Name]";
             // 
             // lblSelection
             // 
             this.lblSelection.AutoSize = true;
-            this.lblSelection.Location = new System.Drawing.Point(257, 457);
+            this.lblSelection.Location = new System.Drawing.Point(157, 457);
             this.lblSelection.Name = "lblSelection";
             this.lblSelection.Size = new System.Drawing.Size(107, 13);
             this.lblSelection.TabIndex = 9;
@@ -68,22 +68,39 @@
             // 
             // cboSelection
             // 
+            this.cboSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSelection.FormattingEnabled = true;
-            this.cboSelection.Location = new System.Drawing.Point(423, 453);
+            this.cboSelection.Items.AddRange(new object[] {
+            "What would you like to do?",
+            "Course:",
+            "\tAdd",
+            "\tEdit",
+            "Round:",
+            "\tAdd",
+            "\tEdit",
+            "Statistics:",
+            "\tView (by Course)",
+            "\tView (by Round Type)",
+            "\tView Overall",
+            "Logout",
+            "Exit"});
+            this.cboSelection.Location = new System.Drawing.Point(323, 453);
             this.cboSelection.Name = "cboSelection";
             this.cboSelection.Size = new System.Drawing.Size(121, 21);
             this.cboSelection.TabIndex = 10;
+            this.cboSelection.SelectedIndexChanged += new System.EventHandler(this.cboSelection_SelectedIndexChanged);
             // 
-            // UserSelectionForm
+            // frmUserSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 554);
+            this.ClientSize = new System.Drawing.Size(601, 489);
             this.Controls.Add(this.cboSelection);
             this.Controls.Add(this.lblSelection);
             this.Controls.Add(this.lblWelcomeMessage);
             this.Controls.Add(this.picSaintsLogo);
-            this.Name = "UserSelectionForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmUserSelection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserSelectionForm";
             ((System.ComponentModel.ISupportInitialize)(this.picSaintsLogo)).EndInit();

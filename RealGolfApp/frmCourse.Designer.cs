@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class CourseForm
+    partial class frmCourse
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CourseForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCourse));
             this.grpClubInformation = new System.Windows.Forms.GroupBox();
             this.chkActive = new System.Windows.Forms.CheckBox();
             this.lblWebsite = new System.Windows.Forms.Label();
@@ -173,7 +173,7 @@
             this.grpClubInformation.Controls.Add(this.txtClubAddress);
             this.grpClubInformation.Controls.Add(this.lblClub);
             this.grpClubInformation.Controls.Add(this.txtClubName);
-            this.grpClubInformation.Location = new System.Drawing.Point(24, 95);
+            this.grpClubInformation.Location = new System.Drawing.Point(25, 95);
             this.grpClubInformation.Name = "grpClubInformation";
             this.grpClubInformation.Size = new System.Drawing.Size(211, 233);
             this.grpClubInformation.TabIndex = 0;
@@ -319,7 +319,7 @@
             this.groupBox1.Controls.Add(this.cboTee);
             this.groupBox1.Controls.Add(this.lblCourse);
             this.groupBox1.Controls.Add(this.cboCourse);
-            this.groupBox1.Location = new System.Drawing.Point(642, 144);
+            this.groupBox1.Location = new System.Drawing.Point(643, 144);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(204, 150);
             this.groupBox1.TabIndex = 1;
@@ -496,7 +496,7 @@
             this.grpHoleInformation.Controls.Add(this.txtDistance1);
             this.grpHoleInformation.Controls.Add(this.txtPar1);
             this.grpHoleInformation.Controls.Add(this.txtHole1);
-            this.grpHoleInformation.Location = new System.Drawing.Point(94, 349);
+            this.grpHoleInformation.Location = new System.Drawing.Point(112, 349);
             this.grpHoleInformation.Name = "grpHoleInformation";
             this.grpHoleInformation.Size = new System.Drawing.Size(649, 157);
             this.grpHoleInformation.TabIndex = 2;
@@ -578,7 +578,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(607, 28);
+            this.lblTotal.Location = new System.Drawing.Point(607, 48);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(31, 13);
             this.lblTotal.TabIndex = 87;
@@ -587,7 +587,7 @@
             // lblIn
             // 
             this.lblIn.AutoSize = true;
-            this.lblIn.Location = new System.Drawing.Point(576, 28);
+            this.lblIn.Location = new System.Drawing.Point(576, 48);
             this.lblIn.Name = "lblIn";
             this.lblIn.Size = new System.Drawing.Size(16, 13);
             this.lblIn.TabIndex = 82;
@@ -867,7 +867,7 @@
             // lblOut
             // 
             this.lblOut.AutoSize = true;
-            this.lblOut.Location = new System.Drawing.Point(303, 28);
+            this.lblOut.Location = new System.Drawing.Point(303, 48);
             this.lblOut.Name = "lblOut";
             this.lblOut.Size = new System.Drawing.Size(24, 13);
             this.lblOut.TabIndex = 40;
@@ -1131,44 +1131,47 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(262, 527);
+            this.btnReset.Location = new System.Drawing.Point(271, 527);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(390, 527);
+            this.btnCancel.Location = new System.Drawing.Point(399, 527);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(518, 527);
+            this.btnSave.Location = new System.Drawing.Point(527, 527);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // picSaintsLogo
             // 
             this.picSaintsLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picSaintsLogo.Image = ((System.Drawing.Image)(resources.GetObject("picSaintsLogo.Image")));
-            this.picSaintsLogo.Location = new System.Drawing.Point(241, 13);
+            this.picSaintsLogo.Location = new System.Drawing.Point(242, 13);
             this.picSaintsLogo.Name = "picSaintsLogo";
             this.picSaintsLogo.Size = new System.Drawing.Size(395, 341);
             this.picSaintsLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picSaintsLogo.TabIndex = 6;
             this.picSaintsLogo.TabStop = false;
             // 
-            // CourseForm
+            // frmCourse
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1182,7 +1185,8 @@
             this.Controls.Add(this.grpHoleInformation);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpClubInformation);
-            this.Name = "CourseForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmCourse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course";
             this.grpClubInformation.ResumeLayout(false);

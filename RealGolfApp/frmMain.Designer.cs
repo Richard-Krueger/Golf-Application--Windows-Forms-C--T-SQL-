@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class MainForm
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.picSaintsLogo = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.cboMainSelection = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picSaintsLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,42 +39,48 @@
             // 
             this.picSaintsLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picSaintsLogo.Image = ((System.Drawing.Image)(resources.GetObject("picSaintsLogo.Image")));
-            this.picSaintsLogo.Location = new System.Drawing.Point(203, 34);
+            this.picSaintsLogo.Location = new System.Drawing.Point(95, 47);
             this.picSaintsLogo.Name = "picSaintsLogo";
             this.picSaintsLogo.Size = new System.Drawing.Size(395, 341);
             this.picSaintsLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picSaintsLogo.TabIndex = 7;
             this.picSaintsLogo.TabStop = false;
             // 
-            // btnLogin
+            // cboMainSelection
             // 
-            this.btnLogin.Location = new System.Drawing.Point(459, 399);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "Sign In";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.cboMainSelection.FormattingEnabled = true;
+            this.cboMainSelection.Items.AddRange(new object[] {
+            "",
+            "Register",
+            "Login",
+            "Exit"});
+            this.cboMainSelection.Location = new System.Drawing.Point(289, 421);
+            this.cboMainSelection.Name = "cboMainSelection";
+            this.cboMainSelection.Size = new System.Drawing.Size(121, 21);
+            this.cboMainSelection.TabIndex = 10;
+            this.cboMainSelection.SelectedIndexChanged += new System.EventHandler(this.cboMainSelection_SelectedIndexChanged);
             // 
-            // btnRegister
+            // label1
             // 
-            this.btnRegister.Location = new System.Drawing.Point(259, 399);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(174, 424);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Make Your Selection:";
             // 
-            // MainForm
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.btnLogin);
+            this.ClientSize = new System.Drawing.Size(601, 489);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboMainSelection);
             this.Controls.Add(this.picSaintsLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MainForm";
+            this.Name = "frmMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -87,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picSaintsLogo;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.ComboBox cboMainSelection;
+        private System.Windows.Forms.Label label1;
     }
 }

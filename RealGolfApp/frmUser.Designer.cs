@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class RegisterForm
+    partial class frmUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
             this.picSaintsLogo = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -36,10 +36,13 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblPasswordVerify = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblReturn = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSaintsLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,77 +78,114 @@
             // lblSelectName
             // 
             this.lblSelectName.AutoSize = true;
-            this.lblSelectName.Location = new System.Drawing.Point(168, 280);
+            this.lblSelectName.Location = new System.Drawing.Point(202, 279);
             this.lblSelectName.Name = "lblSelectName";
-            this.lblSelectName.Size = new System.Drawing.Size(96, 13);
+            this.lblSelectName.Size = new System.Drawing.Size(60, 13);
             this.lblSelectName.TabIndex = 10;
-            this.lblSelectName.Text = "Select Your Name:";
+            this.lblSelectName.Text = "First Name:";
             // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(206, 312);
+            this.lblUserName.Location = new System.Drawing.Point(201, 304);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(58, 13);
+            this.lblUserName.Size = new System.Drawing.Size(61, 13);
             this.lblUserName.TabIndex = 11;
-            this.lblUserName.Text = "Username:";
+            this.lblUserName.Text = "Last Name:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(208, 345);
+            this.lblPassword.Location = new System.Drawing.Point(230, 330);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(56, 13);
+            this.lblPassword.Size = new System.Drawing.Size(32, 13);
             this.lblPassword.TabIndex = 12;
-            this.lblPassword.Text = "Password:";
+            this.lblPassword.Text = "Role:";
             // 
             // lblPasswordVerify
             // 
             this.lblPasswordVerify.AutoSize = true;
-            this.lblPasswordVerify.Location = new System.Drawing.Point(164, 380);
+            this.lblPasswordVerify.Location = new System.Drawing.Point(225, 356);
             this.lblPasswordVerify.Name = "lblPasswordVerify";
-            this.lblPasswordVerify.Size = new System.Drawing.Size(100, 13);
+            this.lblPasswordVerify.Size = new System.Drawing.Size(37, 13);
             this.lblPasswordVerify.TabIndex = 13;
-            this.lblPasswordVerify.Text = "Re-enter Password:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(300, 277);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
+            this.lblPasswordVerify.Text = "Team:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(300, 309);
+            this.textBox1.Location = new System.Drawing.Point(263, 302);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 15;
             // 
-            // textBox2
+            // textBox4
             // 
-            this.textBox2.Location = new System.Drawing.Point(300, 342);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 16;
+            this.textBox4.Location = new System.Drawing.Point(263, 277);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
+            this.textBox4.TabIndex = 18;
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(300, 377);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 17;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(263, 327);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 19;
             // 
-            // RegisterForm
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(263, 353);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 20;
+            // 
+            // lblReturn
+            // 
+            this.lblReturn.Location = new System.Drawing.Point(259, 415);
+            this.lblReturn.Name = "lblReturn";
+            this.lblReturn.Size = new System.Drawing.Size(75, 23);
+            this.lblReturn.TabIndex = 21;
+            this.lblReturn.Text = "&Return";
+            this.lblReturn.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(221, 380);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 17);
+            this.checkBox1.TabIndex = 22;
+            this.checkBox1.Text = "Active:";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox2.Location = new System.Drawing.Point(322, 380);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(62, 17);
+            this.checkBox2.TabIndex = 23;
+            this.checkBox2.Text = "Locked";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // AddEditUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lblReturn);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblPasswordVerify);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
@@ -153,12 +193,13 @@
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.picSaintsLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "RegisterForm";
+            this.Name = "AddEditUserForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register Form";
+            this.Text = "User Form";
             ((System.ComponentModel.ISupportInitialize)(this.picSaintsLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,9 +215,12 @@
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblPasswordVerify;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button lblReturn;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

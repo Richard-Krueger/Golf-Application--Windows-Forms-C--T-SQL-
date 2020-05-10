@@ -76,88 +76,96 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LogInForm.cs">
+    <Compile Include="Clear.cs" />
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogInForm.Designer.cs">
-      <DependentUpon>LogInForm.cs</DependentUpon>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddEditUserForm.cs">
+    <Compile Include="frmUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEditUserForm.Designer.cs">
-      <DependentUpon>AddEditUserForm.cs</DependentUpon>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegisterForm.cs">
+    <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenRoundForm.cs">
+    <Compile Include="frmMenRound.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenRoundForm.Designer.cs">
-      <DependentUpon>MenRoundForm.cs</DependentUpon>
+    <Compile Include="frmMenRound.Designer.cs">
+      <DependentUpon>frmMenRound.cs</DependentUpon>
     </Compile>
-    <Compile Include="Statistics.cs">
+    <Compile Include="frmStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistics.Designer.cs">
-      <DependentUpon>Statistics.cs</DependentUpon>
+    <Compile Include="frmStatistics.Designer.cs">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserSelectionForm.cs">
+    <Compile Include="frmUserSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserSelectionForm.Designer.cs">
-      <DependentUpon>UserSelectionForm.cs</DependentUpon>
+    <Compile Include="frmUserSelection.Designer.cs">
+      <DependentUpon>frmUserSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="WomenRoundForm.cs">
+    <Compile Include="frmWomenRound.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WomenRoundForm.Designer.cs">
-      <DependentUpon>WomenRoundForm.cs</DependentUpon>
+    <Compile Include="frmWomenRound.Designer.cs">
+      <DependentUpon>frmWomenRound.cs</DependentUpon>
     </Compile>
-    <Compile Include="CourseForm.cs">
+    <Compile Include="frmCourse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CourseForm.Designer.cs">
-      <DependentUpon>CourseForm.cs</DependentUpon>
+    <Compile Include="frmCourse.Designer.cs">
+      <DependentUpon>frmCourse.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LogInForm.resx">
-      <DependentUpon>LogInForm.cs</DependentUpon>
+    <Compile Include="SQLConnection.cs" />
+    <Compile Include="UnregisteredUsers1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnregisteredUsers1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Validator.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddEditUserForm.resx">
-      <DependentUpon>AddEditUserForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegisterForm.resx">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenRoundForm.resx">
-      <DependentUpon>MenRoundForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenRound.resx">
+      <DependentUpon>frmMenRound.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Statistics.resx">
-      <DependentUpon>Statistics.cs</DependentUpon>
+    <EmbeddedResource Include="frmStatistics.resx">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserSelectionForm.resx">
-      <DependentUpon>UserSelectionForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmUserSelection.resx">
+      <DependentUpon>frmUserSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WomenRoundForm.resx">
-      <DependentUpon>WomenRoundForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmWomenRound.resx">
+      <DependentUpon>frmWomenRound.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CourseForm.resx">
-      <DependentUpon>CourseForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmCourse.resx">
+      <DependentUpon>frmCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,6 +177,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +188,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UnregisteredUsers1.xsc">
+      <DependentUpon>UnregisteredUsers1.xsd</DependentUpon>
+    </None>
+    <None Include="UnregisteredUsers1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnregisteredUsers1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnregisteredUsers1.xss">
+      <DependentUpon>UnregisteredUsers1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -197,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SaintsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

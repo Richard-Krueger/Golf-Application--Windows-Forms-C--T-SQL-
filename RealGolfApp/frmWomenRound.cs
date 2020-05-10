@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RealGolfApp
 {
-    public partial class CourseForm : Form
+    public partial class frmWomenRound : Form
     {
-        public CourseForm()
+        public frmWomenRound()
         {
             InitializeComponent();
         }

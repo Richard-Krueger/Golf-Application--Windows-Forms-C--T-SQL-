@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class LogInForm
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.picSaintsLogo = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnEnter = new System.Windows.Forms.Button();
@@ -59,6 +59,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "E&xit";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnEnter
             // 
@@ -68,6 +69,7 @@
             this.btnEnter.TabIndex = 9;
             this.btnEnter.Text = "&Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // lblUserName
             // 
@@ -109,8 +111,9 @@
             this.btnBack.TabIndex = 17;
             this.btnBack.Text = "&Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // LogInForm
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,9 +126,10 @@
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.picSaintsLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LogInForm";
+            this.Name = "frmLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In Form";

@@ -1,6 +1,6 @@
 ﻿namespace RealGolfApp
 {
-    partial class Statistics
+    partial class frmStatistics
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,7 @@
             this.cartesianChart2 = new LiveCharts.WinForms.CartesianChart();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +52,7 @@
             // 
             this.lblTeamStats.AutoSize = true;
             this.lblTeamStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamStats.Location = new System.Drawing.Point(168, 19);
+            this.lblTeamStats.Location = new System.Drawing.Point(180, 19);
             this.lblTeamStats.Name = "lblTeamStats";
             this.lblTeamStats.Size = new System.Drawing.Size(441, 69);
             this.lblTeamStats.TabIndex = 0;
@@ -59,7 +60,7 @@
             // 
             // cartScoringAverage
             // 
-            this.cartScoringAverage.Location = new System.Drawing.Point(40, 105);
+            this.cartScoringAverage.Location = new System.Drawing.Point(41, 105);
             this.cartScoringAverage.Name = "cartScoringAverage";
             this.cartScoringAverage.Size = new System.Drawing.Size(233, 121);
             this.cartScoringAverage.TabIndex = 1;
@@ -67,7 +68,7 @@
             // 
             // cartPuttsPerHole
             // 
-            this.cartPuttsPerHole.Location = new System.Drawing.Point(40, 262);
+            this.cartPuttsPerHole.Location = new System.Drawing.Point(41, 262);
             this.cartPuttsPerHole.Name = "cartPuttsPerHole";
             this.cartPuttsPerHole.Size = new System.Drawing.Size(233, 121);
             this.cartPuttsPerHole.TabIndex = 2;
@@ -84,7 +85,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(113, 238);
+            this.label1.Location = new System.Drawing.Point(114, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 4;
@@ -102,7 +103,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 395);
+            this.label3.Location = new System.Drawing.Point(104, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 6;
@@ -111,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(606, 395);
+            this.label4.Location = new System.Drawing.Point(607, 395);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 8;
@@ -148,7 +149,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(360, 329);
+            this.label5.Location = new System.Drawing.Point(371, 330);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 13);
             this.label5.TabIndex = 12;
@@ -156,7 +157,7 @@
             // 
             // cartesianChart2
             // 
-            this.cartesianChart2.Location = new System.Drawing.Point(283, 196);
+            this.cartesianChart2.Location = new System.Drawing.Point(284, 196);
             this.cartesianChart2.Name = "cartesianChart2";
             this.cartesianChart2.Size = new System.Drawing.Size(233, 121);
             this.cartesianChart2.TabIndex = 11;
@@ -164,7 +165,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(283, 415);
+            this.button1.Location = new System.Drawing.Point(284, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 13;
@@ -173,12 +174,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(441, 415);
+            this.button2.Location = new System.Drawing.Point(442, 415);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
             this.button2.Text = "E&xit";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(612, 238);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Fairways Hit";
             // 
             // Statistics
             // 
@@ -194,12 +204,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cartesianChart1);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cartFairwaysHit);
             this.Controls.Add(this.cartPuttsPerHole);
             this.Controls.Add(this.cartScoringAverage);
             this.Controls.Add(this.lblTeamStats);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Statistics";
             this.Text = "Statistics";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -226,5 +238,6 @@
         private LiveCharts.WinForms.CartesianChart cartesianChart2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
     }
 }
